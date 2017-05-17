@@ -1,0 +1,149 @@
+body {
+  font-family: 'Bitter', serif;
+}
+header {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li {
+  display: inline;
+  padding-right: 15px;
+  font-size: 1em;
+  float: left;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a.hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+nav ul {
+  display: inline;
+  width: 100px;
+  height: 25px;
+  top: 10px;
+  left: 50%;
+  margin-right: -125px;
+}
+.mediaWrapper {
+  float: right;
+  padding: 0;
+  border: 0;
+  padding-right: 10px;
+}
+.mediaButtons {
+  float: right;
+  padding: 0;
+  border: 0;
+  padding-right: 10px;
+  padding-bottom: -25px;
+  background-color: white;
+}
+.extraBox {
+  height: 15px;
+  background-color: rgba(255, 0, 0, 0.75);
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  width: 100%;
+}
+.headerText {
+  font-size: 2.2em;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+main {
+  margin-top: 35px;
+}
+nav {
+  position: relative;
+  width: 100%;
+  height: 25px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  max-width: 85%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+footer {
+  background-color: rgba(255, 0, 0, 0.75);
+  font-size: .75em;
+  height: 19px;
+  text-align: center;
+  width: 100%;
+}
+main img {
+  max-width: 85%;
+}
+.sidebar {
+  display: none;
+}
+/*TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+@media only screen and (min-width: 481px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .headerText {
+    font-size: 4.2em;
+  }
+  nav ul li {
+    float: none;
+  }
+}
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+@media only screen and (min-width: 1025px) {
+  .middle {
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 45px;
+    }
+  footer {
+    background-color: rgba(255, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+  }
+  .headerText {
+    font-size: 6em;
+  }
+
+
+
+
+  .sidebar{
+  display: inline;
+  max-width: 150px;
+  margin-left: 200px;
+  border: 2px solid black;
+  padding: 15px;
+  background-color: lightblue;
+  }
+
+}

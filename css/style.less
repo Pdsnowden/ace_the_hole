@@ -1,0 +1,176 @@
+//out: style.css
+
+body {
+  font-family: 'Bitter', serif;
+}
+
+header {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  }
+
+nav ul li {
+  display: inline;
+  padding-right: 15px;
+  font-size: .8em;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &.hover {
+    color:rgba(0, 0, 0, 0.5);
+  }
+}
+nav ul {
+  display: inline;
+  width: 100px;
+  height: 25px;
+  top: 10px;
+  left: 50%;
+  margin-right: -125px;
+
+}
+
+.mediaWrapper {
+  float: right;
+  padding: 0;
+  border: 0;
+  padding-right: 10px;
+}
+
+.mediaButtons
+{
+  float: right;
+  padding: 0;
+  border: 0;
+  padding-right: 10px;
+  padding-bottom: -25px;
+  background-color: white;
+}
+
+.extraBox {
+  height: 15px;
+  background-color: pink;
+  border-top:  2px black solid;
+  border-bottom: 2px black solid;
+  width: 100%;
+}
+
+.headerText {
+  font-size: 2.2em;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+main {
+  margin-top: 35px;
+}
+
+nav {
+position: relative;
+ width: 100%;
+ height: 25px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 85%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.sidebar {
+
+}
+
+footer {
+  background-color:rgba(255,0,0,.75);
+  font-size: .75em;
+  height: 19px;
+  text-align: center;
+  width: 100%;
+}
+
+main img {
+  max-width: 85%;
+}
+
+.sidebar {
+  display: none;
+}
+
+
+/*TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+@media only screen and (min-width: 481px) {
+
+body {
+  width: 100%;
+  height: 100%;
+}
+  .headerText {
+    font-size: 4.2em;
+  }
+
+  nav ul li {
+    float: none;
+  }
+
+}
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+@media only screen and (min-width: 1025px) {
+
+  .middle {
+
+  }
+
+  .mainColumn {
+  grid-column: col 3 / span 2 ;
+  }
+
+  .sidebar {
+
+  }
+
+footer {
+  background-color: blue;
+}
+
+.headerText {
+  font-size: 6em;
+}
+
+table {
+  width: 700px;
+}
+
+main {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+  }
