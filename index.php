@@ -24,9 +24,9 @@
       <center>
         <ul>
           <li><a href="index.php">Home</a></li>
-          <li>Races</li>
-          <li>Faq</li>
-          <li>About</li>
+          <li><a href="races.php">Races</a></li>
+          <li><a href="faq.php">Faq</a></li>
+          <li><a href="about.php">About</a></li>
           <li>Contact</li>
         </ul>
       <span class="mediaWrapper">
